@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 """
-
+0-lockboxes.py
 """
 def canUnlockAll(boxes):
     """
-
+	Determines if all the boxes can be opened.
+    Args:
+        boxes: List of list
+    Returns:
+        True or false
     """
     unlocked = set([0])
     stack = [0]
