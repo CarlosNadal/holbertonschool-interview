@@ -1,3 +1,5 @@
+#!/usr/bin/pyhton3
+
 def canUnlockAll(boxes):
     unlocked = set([0])
     stack = [0]
