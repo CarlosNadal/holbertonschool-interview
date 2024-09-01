@@ -40,4 +40,4 @@ def canUnlockAll(boxes):
                 stack.append(key)
 
     # Return True if all boxes are unlocked, otherwise False
-    return len(unlocked) == len(boxes); 
+    return len(unlocked) == len(boxes) '\n'
