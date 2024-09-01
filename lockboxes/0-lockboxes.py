@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-You have n number of locked boxes in front of you. 
-Each box is numbered sequentially from 0 to n - 1 
+You have n number of locked boxes in front of you.
+Each box is numbered sequentially from 0 to n - 1
 and each box may contain keys to the other boxes
 
 """
+
+
 def canUnlockAll(boxes):
     """
     Determines if all boxes can be unlocked.
-
     Args:
         boxes (list of list of int): 
         A list of boxes, where each box is represented
@@ -17,8 +18,6 @@ def canUnlockAll(boxes):
 
     Returns:
         bool: True if all boxes can be unlocked, False otherwise.
-
-
     """
     # Start with the first box (box 0) unlocked
     unlocked = set([0])
@@ -35,7 +34,6 @@ def canUnlockAll(boxes):
             if key not in unlocked and key < len(boxes):
                 unlocked.add(key)
                 stack.append(key)
-
+                
     # Return True if all boxes are unlocked, otherwise False
-    return len(unlocked) == len(boxes)
-
+        return len(unlocked) == len(boxes)
