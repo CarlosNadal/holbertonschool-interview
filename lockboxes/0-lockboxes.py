@@ -7,7 +7,7 @@ and each box may contain keys to the other boxes
 """
 
 
-def can_unlock_all(boxes):
+def canUnlockAll(boxes):
     """
     Check if all boxes can be unlocked.
 
